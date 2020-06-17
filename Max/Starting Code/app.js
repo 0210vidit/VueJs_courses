@@ -4,10 +4,13 @@ new Vue({
   el: '#app',
   data: {
     title: 'Hello World!',
+    link: 'http://google.com',
+    finished: '<a href="http://google.com">Google</a>',
   },
   methods: {
     sayHello: function () {
-      return 'Hello';
+      this.title = 'Hello';
+      return this.title;
     },
   },
 });
