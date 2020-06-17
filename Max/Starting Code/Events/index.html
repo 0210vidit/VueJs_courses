@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="https://unpkg.com/vue/dist/vue.js"></script>
-
-</head>
-
-<body>
-  <div id="app">
-    <button>Click Me </button>
-    <p>{{counter}}</p>
-  </div>
-</body>
-<script src="./app.js"></script>
-
+  <body>
+    <div id="app">
+      <button v-on:click="updateCounter(2,$event)">Click Me</button>
+      <p>{{counter}}</p>
+      <p v-on:mousemove="updateCoordinates">
+        Coordinates: {{x}}/ {{y}} -
+        <!-- <span v-on:mousemove="dummy">DEAD SPOT</span> -->
+        <span v-on:mousemove.stop="">DEAD SPOT</span>
+      </p>
+      <input type="text" v-on:keyup.enter="alertMe" />
+    </div>
+  </body>
+  <script src="./app.js"></script>
 </html>
