@@ -25,5 +25,8 @@ new Vue({
       this.coords.x = e.offsetX;
       this.coords.y = e.offsetY;
     },
+    updateName(e) {
+      this.name = e.target.value;
+    },
   },
 });
