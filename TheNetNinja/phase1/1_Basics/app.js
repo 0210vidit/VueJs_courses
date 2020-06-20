@@ -2,10 +2,11 @@ new Vue({
   el: '#app',
   data: {
     title: 'Becoming a Vue Ninja!',
+    name: 'Vidit',
   },
   methods: {
-    greet() {
-      return `Hello There!`;
+    greet(time) {
+      return `Hello and ${time}, ${this.name}`;
     },
   },
 });
