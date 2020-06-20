@@ -10,6 +10,7 @@ new Vue({
       x: 0,
       y: 0,
     },
+    showName: true,
   },
   methods: {
     greet(time) {
@@ -30,6 +31,9 @@ new Vue({
     // },
     logMessage() {
       console.log('Clicked');
+    },
+    toggleName() {
+      this.showName = !this.showName;
     },
   },
 });

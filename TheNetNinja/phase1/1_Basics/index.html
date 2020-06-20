@@ -56,6 +56,9 @@
     <button @click.shift="logMessage">shift-click</button>
     <a :href="url" @click.prevent="logMessage">Way to Google</a>
 
+    <p v-if="showName">{{showName}}</p>
+    <button @click="toggleName">toggle-name</button>
+
   </div>
 
 
