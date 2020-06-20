@@ -27,8 +27,10 @@
     <input type="text" :value="name">
     <!-- Events -->
     <p>I earned {{wage}} hour!</p>
-    <button v-on:click="wage++">Increase wage by 1 Pound</button>
-    <button v-on:click="wage--">Decrease wage by 1 Pound</button>
+    <button v-on:click="changeWage(1)">Increase wage by 1 Pound</button>
+    <button v-on:click="changeWage(-1)">Decrease wage by 1 Pound</button>
+    <button v-on:dblclick="changeWage(5)">Decrease wage by 5 Pound</button>
+    <button v-on:dblclick="changeWage(-5)">Decrease wage by 5 Pound</button>
 
   </div>
 

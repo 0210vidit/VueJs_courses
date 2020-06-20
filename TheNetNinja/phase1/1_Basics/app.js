@@ -11,5 +11,8 @@ new Vue({
     greet(time) {
       return `Hello and ${time}, ${this.name}`;
     },
+    changeWage(amount) {
+      this.wage += amount;
+    },
   },
 });
