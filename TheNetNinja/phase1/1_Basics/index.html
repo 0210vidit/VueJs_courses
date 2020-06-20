@@ -25,6 +25,11 @@
     <a v-bind:href="url">Go to Google!</a>
     <div v-bind:class="classes">Classes from Instances</div>
     <input type="text" :value="name">
+    <!-- Events -->
+    <p>I earned {{wage}} hour!</p>
+    <button v-on:click="wage++">Increase wage by 1 Pound</button>
+    <button v-on:click="wage--">Decrease wage by 1 Pound</button>
+
   </div>
 
 

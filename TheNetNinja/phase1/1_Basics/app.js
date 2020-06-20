@@ -5,6 +5,7 @@ new Vue({
     name: 'Vidit',
     url: 'http://google.com',
     classes: ['one', 'two'],
+    wage: 10,
   },
   methods: {
     greet(time) {
