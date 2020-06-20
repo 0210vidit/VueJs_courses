@@ -46,8 +46,15 @@
     </div>
 
     <!-- Keyboard events -->
-    <input type="text" @keyup="updateName">
-    <input type="text" @keypress="updateName">
+    <!-- <input type="text" @keyup="updateName">
+    <input type="text" @keypress="updateName"> -->
+    <!-- two way databinding -->
+    <!-- <input type="text" v-model="name"> -->
+
+    <!-- Modifier -->
+    <button @click.alt="logMessage">alt-click</button>
+    <button @click.shift="logMessage">shift-click</button>
+    <a :href="url" @click.prevent="logMessage">Way to Google</a>
 
   </div>
 
