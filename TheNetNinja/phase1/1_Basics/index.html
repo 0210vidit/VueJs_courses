@@ -60,6 +60,17 @@
     <p v-else>Name is False</p>
     <button @click="toggleName">toggle-name</button>
 
+    <ul>
+      <li v-for="item in items">{{item}}</li>
+    </ul>
+
+    <div v-for="ninja in ninjas">
+      <p>{{ninja.name}}</p>
+      <p>{{ninja.age}}</p>
+      <p>{{ninja.belt}}</p>
+
+    </div>
+
   </div>
 
 

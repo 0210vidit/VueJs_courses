@@ -11,6 +11,16 @@ new Vue({
       y: 0,
     },
     showName: true,
+    items: ['Mushroom', 'Green Shells', 'Red Shells', 'Blue Shells'],
+    ninjas: [
+      {
+        name: 'Crystal',
+        age: 25,
+        belt: 'Black',
+      },
+      { name: 'Ryu', age: 35, belt: 'Orange' },
+      { name: 'Vidit', age: 23, belt: 'Black' },
+    ],
   },
   methods: {
     greet(time) {
