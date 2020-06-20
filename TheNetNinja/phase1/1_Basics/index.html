@@ -6,6 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>View Basic</title>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <style>
+    .one {
+      color: green;
+    }
+
+    .two {
+      text-decoration: line-through;
+    }
+  </style>
 </head>
 
 <body>
@@ -14,6 +23,8 @@
     <h2>{{title}}</h2>
     <p>{{greet('morning')}}</p>
     <a v-bind:href="url">Go to Google!</a>
+    <div v-bind:class="classes">Classes from Instances</div>
+    <input type="text" :value="name">
   </div>
 
 

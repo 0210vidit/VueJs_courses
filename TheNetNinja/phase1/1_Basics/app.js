@@ -4,6 +4,7 @@ new Vue({
     title: 'Becoming a Vue Ninja!',
     name: 'Vidit',
     url: 'http://google.com',
+    classes: ['one', 'two'],
   },
   methods: {
     greet(time) {
